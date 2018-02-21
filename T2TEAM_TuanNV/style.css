@@ -1,3 +1,6 @@
+a:hover {
+	text-decoration: none;
+}
 header {
 	margin: 10px 0 20px 0;
 }
@@ -11,14 +14,10 @@ header {
 	text-align: center;
 }
 .T2TEAMLeft img, .T2TEAMRight img {
-	width: 70%;
-}
-.T2TEAMCenter {
-	text-align: center;
+	width: 50%;
 }
 .T2TEAMCenter img {
-	width: 10%;
-	height: 10%;
+	width: 8%;
 }
 .T2TEAMCenter a {
 	text-decoration: none;
@@ -50,10 +49,10 @@ ul li {
 	text-align: center;
 	padding-top: 10px;
 }
-.social ul {
+.social ul, .fooOne ul {
 	display: inline-flex;
 }
-.social ul li {
+.social ul li, .fooOne ul li {
 	margin: 0 5px;
 }
 .social ul li img {
@@ -82,11 +81,47 @@ ul li {
 	margin-top: 30px;
 }
 .slogan hr {
-	margin-top: 10px;
-	margin-bottom: 10px;
 	border-top: 2px solid #000;
 	width: 200px
 }
-@media (min-width:992px) {
-  	
+.mainArticle {
+	padding: 0 30px;
+}
+.thumbnail {
+	padding: 0;
+	border: none;
+}
+.caption {
+	text-align: center;
+}
+.caption h3 {
+	margin-top: 0;
+}
+.caption h4 {
+	color: #999;
+}
+footer {
+	border-top: 2px solid #000;
+	padding-top: 30px;
+}
+.fooOne {
+	text-align: center;
+	line-height: 70px;
+	padding-top: 10%;
+}
+.contactFirst a, .contactSecond a {
+	text-transform: uppercase;
+	color: #999;
+	margin: 0 10px;
+}
+.contactFirst a:nth-child(2), .contactSecond a:nth-child(2) {
+    border-right: 2px solid #999;
+    border-left: 2px solid #999;
+    padding: 0 20px;
+}
+.fooTwo {
+	text-align: center;
+}
+.fooTwo img {
+	width: 70%;
 }
