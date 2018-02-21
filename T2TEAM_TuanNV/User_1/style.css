@@ -26,8 +26,15 @@ header {
 	font-weight: bold;
 	margin: 0 2%;
 }
-nav img {
+.banner img {
 	width: 100%;
+}
+.banner h1 {
+	position: absolute;
+	right: 20%;
+	color: #fff;
+	font-size: 80px;
+	top: 18%;
 }
 .breadcrumb {
 	text-transform: uppercase;
