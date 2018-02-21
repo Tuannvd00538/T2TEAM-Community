@@ -1,0 +1,163 @@
+.navbar {
+    margin-bottom: 0;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar-logo {
+	font-family: "Brush Script MT";
+	color: #fff;
+	font-size: 30px;
+}
+
+.nav-header {
+	background-color: #ff3333;
+    padding: 2px 80px;
+}
+
+.nav-search {
+    padding: 0 150px;
+}
+
+.cart img{
+    width: 45px;
+}
+
+.cart span {
+    color: #fff;
+}
+
+.cart {
+    padding: 10px 10px;
+}
+
+.menu-bar {
+    background-color: #003333;
+}
+
+.menu-icontext {
+    padding: 0 70px;
+}
+
+.menu-list img {
+    width: 40px;
+    padding: 3px 0;
+}
+
+.menu-list span {
+    color: #fff;
+    font-size: 15px;
+    font-family: Timenewroman;
+}
+
+.slideads {
+    padding: 20px 70px;
+}
+
+.news {
+    padding: 0 70px;
+}
+
+.carousel-inner > .item > a > img {
+    width: 100%;
+    height: 340px;
+}
+
+.carousel {
+    width: 100%;
+    height: 340px;
+}
+
+.ads {
+    height: 340px; 
+}
+
+.ads-img img {
+    margin-bottom: 18px;
+    width: 350px;
+    height: 160px;
+}
+
+.newstitle,.allnewstitle,.phonehottitle {
+    font-weight: bold;
+    font-size: 22px;
+    font-family: Tahoma;
+}
+
+.news img {
+    width: 150px;
+    height: 120px;
+}
+
+.news p {
+    font-size: 15px;
+    padding: 40px 0;
+    font-weight: bold;
+}
+
+.newshot,.allnews {
+    padding: 10px;
+}
+
+.posts {
+    padding: 10px 0;
+}
+
+.posts p {
+    margin-right: 100px;
+}
+
+.phonehot {
+    padding: 10px 80px; 
+}
+
+.name {
+    font-weight: bold;
+    display: block;
+    font-size: 15px;
+}
+
+.price {
+    font-size: 13px;
+}
+
+.phoneitem,.laptopitem {
+    padding: 30px 50px;
+}
+
+.phoneitem a,.laptopitem a {
+    color: #000;
+}
+
+/*CSS INPUT SEARCH HEADER*/
+
+#custom-search-input{
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+    width: 400px;
+}
+
+#custom-search-input button{
+    width: 70px;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #000;
+    background-color: #707070;
+    padding: 3px 0;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+
