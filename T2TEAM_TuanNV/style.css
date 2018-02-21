@@ -1,0 +1,92 @@
+header {
+	margin: 10px 0 20px 0;
+}
+.row {
+	margin: 0;
+}
+.T2TEAMLeft {
+	border-right: 1px solid #999;
+}
+.T2TEAMLeft, .T2TEAMRight {
+	text-align: center;
+}
+.T2TEAMLeft img, .T2TEAMRight img {
+	width: 70%;
+}
+.T2TEAMCenter {
+	text-align: center;
+}
+.T2TEAMCenter img {
+	width: 10%;
+	height: 10%;
+}
+.T2TEAMCenter a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: bold;
+	margin: 0 2%;
+}
+nav img {
+	width: 100%;
+}
+.breadcrumb {
+	text-transform: uppercase;
+	background-color: #fff;
+	border-bottom: 3px solid #eee;
+	font-weight: bold;
+	color: #999;
+	margin: 0 20%;
+}
+.topArticle {
+	margin-top: 30px;
+	padding: 0 50px;
+}
+ul li {
+	list-style-type: none;
+}
+.social {
+	width: auto;
+	text-align: center;
+	padding-top: 10px;
+}
+.social ul {
+	display: inline-flex;
+}
+.social ul li {
+	margin: 0 5px;
+}
+.social ul li img {
+	width: 80%;
+}
+.search {
+	text-align: center;
+}
+.search input {
+	width: 70%;
+	height: 45px;
+	border: 2px solid #555;
+	padding: 0 20px;
+	border-radius: 2px;
+	margin-right: 50px;
+}
+.search button {
+	height: 45px;
+	padding: 0 15px;
+	border: 2px solid #555;
+	background-color: #fff;
+}
+.slogan {
+	text-align: center;
+	padding: 0 20%;
+	margin-top: 30px;
+}
+.slogan hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-top: 2px solid #000;
+	width: 200px
+}
+@media (min-width:992px) {
+  	
+}
