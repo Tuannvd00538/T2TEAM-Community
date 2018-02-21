@@ -15,7 +15,9 @@ a:hover {
 
 .nav-header {
 	background-color: #ff3333;
-    padding: 2px 70px;
+    padding-top: 2px;
+    padding-right: 50px;
+    padding-left: 100px;
 }
 
 .nav-search {
@@ -40,7 +42,8 @@ a:hover {
 }
 
 .menu-icontext {
-    padding: 0 50px;
+    padding: 0 40px;
+    margin-left: 5%;
 }
 
 .menu-list img {
