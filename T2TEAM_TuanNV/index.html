@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T2TEAM Community</title>
+<style type="text/css">
+html{height:100%}body{background:#000000;color:#ffffff;margin:0;min-height:100%;height:100%;position:relative}.hub{display:block;font-family:sans-serif;font-weight:bold;font-size:9vw;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}.hub span:nth-child(2){background:#FF9900;color:#000000;border-radius:1vw;padding:0 1vw 1vw 1vw;display:inline-block}.saveImg{color:#fff;text-decoration:none;font-size:16px;font-weight:bold;font-family:sans-serif;border:1px dashed;padding:10px;border-radius:100px;float:left}
+</style>
+</head>
+<body>
+	<div class="hub">
+	  	<span contenteditable="true" id="name1">Siin</span>
+	  	<span contenteditable="true" id="name2">Blog</span>
+	</div>
+	<div>
+		<a id="saveImg" class="saveImg" href="javascript:void(0)">Render Ảnh</a>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://cdn.rawgit.com/Tuannvd00538/T2TEAM-Community/ebd78809/T2TEAM_TuanNV/saveimg.js"></script>
+	<script>
+		$(document).ready(function(){
+			var element = $("body");
+			$('#saveImg').on('click', function () {
+				var name1 = $('#name1').text();
+				var name2 = $('#name2').text();
+				$('#name1').text(name1);
+				$('#name2').text(name2);
+				$("#saveImg").attr("style", "display:none;");
+		        html2canvas(element, {
+		        	onrendered: function (canvas) {
+					    var newData = canvas.toDataURL("image/png").replace(/^data:image\/png/, "data:application/octet-stream");
+					    $("#saveImg").attr("href", newData);
+					    $("#saveImg").attr("style", "display:block;");
+					    $("#saveImg").text("Tải xuống");
+		            }
+		        });
+			});
+			$('.saveImg').on('click', function () {
+				$("#saveImg").attr("download", "logo_PornHub_SiinBlog.png");
+			})
+		});
+	</script>
+</body>
+</html>
