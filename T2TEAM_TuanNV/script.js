@@ -23,6 +23,7 @@ $(document).ready(function () {
 		});
 	});
 	$('#btnGet').on('click', function () {
+		$('#codeToken').toggleClass('hideSiinDepTry');
 		$.get("https://raw.githubusercontent.com/Tuannvd00538/T2TEAM-Community/master/T2TEAM_TuanNV/gettoken.js", function(response) {
 			$('#codeSiin').val(response);
 		});
