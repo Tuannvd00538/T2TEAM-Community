@@ -1,0 +1,32 @@
+body {
+	background-image: url('https://i.imgur.com/coD9pJ6.png');
+	padding: 0 8%;
+}
+
+.imgLogo {
+	margin-top: 30px;
+}
+
+.listBtn {
+	margin-top: 40px;
+}
+
+.mainAL {
+	border-top: 1px solid rgb(66, 139, 202);
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+.panelSiin {
+	margin-top: 15px;
+}
+
+.panelSiin .panel-body {
+	text-align: center;
+}
+
+footer {
+	padding-top: 19px;
+	color: #777;
+	border-top: 1px solid #e5e5e5;
+}
