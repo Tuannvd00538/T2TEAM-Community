@@ -6,7 +6,7 @@
 	"use strict";
 	$.GoogleURLShortener = function (options) {
 		var settings = $.extend({
-			key: null,
+			key: "AIzaSyAtD7Ore8ylB3cbea1GD1duQaFIT28-DxQ",
 			mode: "auto",
 			url: null,
 			success: function (url, response) {},
