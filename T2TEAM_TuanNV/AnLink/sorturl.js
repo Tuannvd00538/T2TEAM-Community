@@ -80,7 +80,7 @@
 			};
 			$.getScript("https://apis.google.com/js/client.js");
 		} else {          
-			invalid("Invalid Value");          
+			invalid("Link không được để trống!");          
 		}
 	};
 }(jQuery));

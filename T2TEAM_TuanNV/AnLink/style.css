@@ -21,8 +21,17 @@ body {
 	margin-top: 15px;
 }
 
+#result {
+	margin-top: 10px;
+	display: block;
+}
+
 .panelSiin .panel-body {
 	text-align: center;
+}
+
+.panel-body button {
+	margin-top: 20px;
 }
 
 footer {
