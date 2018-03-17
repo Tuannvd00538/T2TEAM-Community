@@ -10,10 +10,10 @@
 	<center>
 		<img src="https://i.imgur.com/1KW2tX3.png" class="imgLogo"/>
 		<div class="listBtn">
-			<a href="javascript:void(0)" class="btn btn-default">Tạo Link</a>
-			<a href="javascript:void(0)" class="btn btn-primary">Cập Nhật Link</a>
-			<a href="javascript:void(0)" class="btn btn-success">Giới Thiệu</a>
-			<a href="javascript:void(0)" class="btn btn-info">Thoát</a>
+			<button type="button" class="btn btn-default">Tạo Link</button>
+			<button type="button" class="btn btn-primary">Cập Nhật Link</button>
+			<button type="button" class="btn btn-success">Giới Thiệu</button>
+			<button type="button" class="btn btn-info">Thoát</button>
 		</div>
 	</center>
 	<div class="mainAL">
@@ -22,10 +22,15 @@
 		</center> 
 		<div class="panel panel-primary panelSiin">
 			<div class="panel-heading">
-				<h3 class="panel-title">Trang chủ</h3>
+				<h3 class="panel-title">Mở khóa link</h3>
 			</div>
 			<div class="panel-body">
-				Ở đây không có link! Vào <a href="https://www.siinblog.com/?rel=anlink" target="_blank">Siin Blog</a> kiếm link nhá! Còn muốn tạo link thì nhìn lên trên :)
+				<div class="input-group">
+					<span class="input-group-addon" id="sizing-addon2">Link share facebook</span>
+					<input type="text" class="form-control" placeholder="Link share" aria-describedby="sizing-addon2">
+				</div>
+				<button type="button" class="btn btn-default">Mở khóa</button>
+				<strong id="resultUnlock"></strong>
 			</div>
 		</div>
 	</div>
