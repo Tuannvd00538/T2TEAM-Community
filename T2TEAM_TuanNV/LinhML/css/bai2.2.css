@@ -1,0 +1,58 @@
+* {
+	font-family: "Open Sans","segoe ui",Helvetica,Arial,sans-serif;
+}
+
+body {
+	background-color: #000;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	text-decoration: none;
+	color: purple;
+}
+
+article {
+	height: 266px;
+	background-color: #fff;
+	margin: 10% 23%;
+	padding: 5px;
+}
+
+.colLeft {
+	border-right: 1px solid #ddd;
+}
+
+.colLeft h2, .colRight h2 {
+	text-transform: uppercase;
+    font-weight: 300;
+    color: purple;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.media-left img {
+	width: 50px;
+}
+
+.media-heading {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.media-body {
+	color: #999;
+}
+
+.media-body p {
+	font-size: 16px;
+}
+
+.media {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 5px;
+}
