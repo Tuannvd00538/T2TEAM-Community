@@ -1,0 +1,208 @@
+{
+    "module": [
+        {
+            "id": "000001",
+            "type": "header",
+            "html": "<header><ul><li>{{menu_1}}</li><li>{{menu_2}}</li><li>{{menu_3}}</li><li>{{menu_4}}</li></ul></header>",
+            "css": "header li{color:red}",
+            "content": [
+                {
+                    "title": "Menu 1",
+                    "name": "menu_1",
+                    "value": "Sản phẩm",
+                    "type": "text"
+                },
+                {
+                    "title": "Menu 2",
+                    "name": "menu_2",
+                    "value": "Khuyến mãi",
+                    "type": "text"
+                },
+                {
+                    "title": "Menu 3",
+                    "name": "menu_3",
+                    "value": "Tin tức",
+                    "type": "text"
+                },
+                {
+                    "title": "Menu 4",
+                    "name": "menu_4",
+                    "value": "Liên hệ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "id": "000001",
+            "type": "header",
+            "html": "<header><ul><li>{{menu_1}}</li><li>{{menu_2}}</li><li>{{menu_3}}</li><li>{{menu_4}}</li></ul></header>",
+            "css": "header li{color:blue}",
+            "content": [
+                {
+                    "title": "Menu 1",
+                    "name": "menu_1",
+                    "value": "Trang chủ",
+                    "type": "text"
+                },
+                {
+                    "title": "Menu 2",
+                    "name": "menu_2",
+                    "value": "Tất cả sản phẩm",
+                    "type": "text"
+                },
+                {
+                    "title": "Menu 3",
+                    "name": "menu_3",
+                    "value": "Tất cả tin tức",
+                    "type": "text"
+                },
+                {
+                    "title": "Menu 4",
+                    "name": "menu_4",
+                    "value": "Liên hệ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "id": "000003",
+            "type": "header",
+            "html": "<header><ul><li>{{menu_1}}</li><li>{{menu_2}}</li><li>{{menu_3}}</li><li>{{menu_4}}</li></ul></header>",
+            "css": "header{color:green}",
+            "content": [
+                {
+                    "title": "Menu 1",
+                    "name": "menu_1",
+                    "value": "Trang chủ",
+                    "type": "text"
+                },
+                {
+                    "title": "Menu 2",
+                    "name": "menu_2",
+                    "value": "Sản phẩm khuyến mãi",
+                    "type": "text"
+                },
+                {
+                    "title": "Menu 3",
+                    "name": "menu_3",
+                    "value": "Tất cả tin tức",
+                    "type": "text"
+                },
+                {
+                    "title": "Menu 4",
+                    "name": "menu_4",
+                    "value": "Tài khoản",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "id": "000004",
+            "type": "section",
+            "html": "<section><h2>{{section_title_1}}</h2><div class='section-desc'>{{section_desc_1}}</div><div class='section-image'><img src = '{{section_image_1}}'/></div></section>",
+            "css": "section{color:blue}",
+            "content": [
+                {
+                    "title": "Tiêu đề section 1",
+                    "name": "section_title_1",
+                    "value": "Giới thiệu",
+                    "type": "text"
+                },
+                {
+                    "title": "Mô tả section 1",
+                    "name": "section_desc_1",
+                    "value": "Suplo hứa sẽ không gửi những mail với nội dung không quan trọng hoặc spam. Các bạn là người đầu tiên biết được về",
+                    "type": "text"
+                },
+                {
+                    "title": "Hình ảnh cho section 1",
+                    "name": "section_image_1",
+                    "value": "",
+                    "type": "file"
+                },
+                {
+                    "title": "Menu 4",
+                    "name": "menu_4",
+                    "value": "Liên hệ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "id": "000005",
+            "type": "section",
+            "html": "<section><h2>{{section_title_2}}</h2><div class='section-desc'>{{section_desc_2}}</div><div class='policy-item'><div class='policy-icon'>{{policy_icon_1}}</div><div class='policy-content'>{{policy_content_1}}</div></div><div class='policy-item'><div class='policy-icon'>{{policy_icon_2}}</div><div class='policy-content'>{{policy_content_2}}</div></div><div class='policy-item'><div class='policy-icon'>{{policy_icon_3}}</div><div class='policy-content'>{{policy_content_3}}</div></div></section>",
+            "css": "section{color:blue}",
+            "content": [
+                {
+                    "title": "Tiêu đề section 2",
+                    "name": "section_title_2",
+                    "value": "Chính sách",
+                    "type": "text"
+                },
+                {
+                    "title": "Mô tả section 2",
+                    "name": "section_desc_2",
+                    "value": "Suplo hứa hẹn mang đến những chính sách hiệu quả nhất đến tay người tiêu dùng khi tin dùng sản phẩm của Suplo",
+                    "type": "text"
+                },
+                {
+                    "title": "Hình ảnh cho chính sách 1",
+                    "name": "policy_icon_1",
+                    "value": "<i class='fa fa-truck'></i>",
+                    "type": "text"
+                },
+                {
+                    "title": "Nội dung chính sách 1",
+                    "name": "policy_content_1",
+                    "value": "Miễn phí vận chuyển",
+                    "type": "text"
+                },
+                {
+                    "title": "Hình ảnh cho chính sách 2",
+                    "name": "policy_icon_2",
+                    "value": "<i class='fa fa-life-ring'></i>",
+                    "type": "text"
+                },
+                {
+                    "title": "Nội dung chính sách 2",
+                    "name": "policy_content_2",
+                    "value": "Hotline hỗ trợ 24/7",
+                    "type": "text"
+                },
+                {
+                    "title": "Hình ảnh cho chính sách 3",
+                    "name": "policy_icon_3",
+                    "value": "<i class='fa fa-refresh'></i>",
+                    "type": "text"
+                },
+                {
+                    "title": "Nội dung chính sách 2",
+                    "name": "policy_content_3",
+                    "value": "Đổi trả hàng trong vòng 1 tuần",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "id": "000006",
+            "type": "section",
+            "html": "<section><a href='{{section_video_url}}' class='section-image'><img src='{{section_image_3}}'/></a></section>",
+            "css": "section a{display:block}",
+            "content": [
+                {
+                    "title": "Hình ảnh cho section 3",
+                    "name": "section_image_3",
+                    "value": "",
+                    "type": "file"
+                },
+                {
+                    "title": "Đường dẫn video lấy từ youtube",
+                    "name": "section_video_url",
+                    "value": "",
+                    "type": "text"
+                }
+            ]
+        }
+    ]
+}
