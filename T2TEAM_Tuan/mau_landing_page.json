@@ -5,41 +5,47 @@
                 "name": "logo",
                 "title": "Logo",
                 "type": "file",
-                "value": "https://theme.hstatic.net/1000278055/1000356434/14/logo.png?v=1653"
+                "value": "https://theme.hstatic.net/1000278055/1000356434/14/logo.png?v=1653",
+                "href": "#123"
             },
             {
                 "name": "menu_1",
                 "title": "Menu 1",
                 "type": "text",
-                "value": "Trang chủ"
+                "value": "Trang chủ",
+                "href": "#123"
             },
             {
                 "name": "menu_2",
                 "title": "Menu 2",
                 "type": "text",
-                "value": "Giới thiệu"
+                "value": "Giới thiệu",
+                "href": "#123"
             },
             {
                 "name": "menu_3",
                 "title": "Menu 3",
                 "type": "text",
-                "value": "Sản phẩm"
+                "value": "Sản phẩm",
+                "href": "#123"
             },
             {
                 "name": "menu_4",
                 "title": "Menu 4 ",
                 "type": "text",
-                "value": "Tin tức"
+                "value": "Tin tức",
+                "href": "#123"
             },
             {
                 "name": "menu_5",
                 "title": "Menu 5",
                 "type": "text",
-                "value": "Liên hệ"
+                "value": "Liên hệ",
+                "href": "#123"
             }
         ],
         "css": "header .hd-desktop{position:absolute;width:100%;z-index:2;background:rgba(0,0,0,0.8)}.hd-logo a{display:block}.hd-logo a img{max-width:120px}header .hd-desktop .hd-center{padding:20px 0}header .hd-desktop .hd-top a,header .hd-desktop .hd-top .hdt-cart a,header .hd-mobile .mobile-nav ul li a{font-size:14px}header .hd-desktop .hd-center .hd-navbar > ul > li{display:inline-block;}header .hd-desktop .hd-center .hd-navbar > ul > li > a{font-family:'Cuprum'!important;font-weight:700;display:block;padding:25px 20px;color:#b6b6b6;-webkit-transition:all .3s ease;-moz-transition:all .3s ease;transition:all .3s ease;text-transform:uppercase!important}header .hd-desktop .hd-center .hd-navbar > ul > li > a:hover{color:#fff}@media (max-width:992px){ header .hd-desktop .hd-center .hd-navbar > ul > li > a { padding: 20px 10px !important; font-size: 12px !important; } header .hd-desktop .hd-center { padding: 7px 0px !important; }}",
-        "html": "<header id='header'> <div class='hd-desktop medium--hide small--hide'> <div class='hd-center'> <div class='wrapper'> <div class='inner'> <div class='grid'> <div class='grid__item large--two-twelfths'> <div class='hd-logo'> <a href='/'> <img class='editable-logo'src='{{logo}}' alt='' /> </a> </div> </div> <div class='grid__item large--ten-twelfths'> <div class='hd-navbar'> <ul class='no-bullets'> <li> <a class='smooth-scroll editable-menu_1' href='#lg-slider'>{{menu_1}}</a> </li> <li> <a class='smooth-scroll editable-menu_2' href='#lg-policy'>{{menu_2}}</a> </li> <li> <a class='smooth-scroll editable-menu_3' href='#lg-aboutus'>{{menu_3}}</a> </li> <li> <a class='smooth-scroll editable-menu_4' href='#lg-flash-sale'>{{menu_4}}</a> </li> <li> <a class='smooth-scroll editable-menu_5' href='#lg-collections'>{{menu_5}}</a> </ul> </div> </div> </div> </div> </div> </div> </div> <div class='hd-mobile large--hide'> <div class='wrapper'> <div class='grid'> <div class='grid__item medium--one-third small--one-third'> <a href='/' class='header-logo'> <img class='editable-logo' src='{{logo}}' alt=''> </a> </div> <div class='grid__item medium--two-thirds small--two-thirds text-right'> <div class='mobile-nav'> <a href='javascript:void(0)' class='header-bars'> <i class='fa fa-bars' aria-hidden='true'></i> </a> <ul class='no-bullets'> <li> <a class='smooth-scroll editable-menu_1' href='#lg-slider'>{{menu_1}}</a> </li> <li> <a class='smooth-scroll editable-menu_2' href='#lg-policy'>{{menu_2}}</a> </li> <li> <a class='smooth-scroll editable-menu_3' href='#lg-aboutus'>{{menu_3}}</a> </li> <li> <a class='smooth-scroll editable-menu_4' href='#lg-flash-sale'>{{menu_4}}</a> </li> <li> <a class='smooth-scroll editable-menu_5' href='#lg-collections'>{{menu_5}}</a> </ul> </div> </div> </div> </div> </div></header>",
+        "html": "<header id='header'> <div class='hd-desktop medium--hide small--hide'> <div class='hd-center'> <div class='wrapper'> <div class='inner'> <div class='grid'> <div class='grid__item large--two-twelfths'> <div class='hd-logo'> <a href='/'> <img class='editable-logo'src='{{logo}}' alt='' /> </a> </div> </div> <div class='grid__item large--ten-twelfths'> <div class='hd-navbar'> <ul class='no-bullets'> <li ng-repeat='li in rsHeader'> <a class='smooth-scroll editable-{{li.name}}' href='{{li.href}}'>{{li.value}}</a> </li> </ul> </div> </div> </div> </div> </div> </div> </div> <div class='hd-mobile large--hide'> <div class='wrapper'> <div class='grid'> <div class='grid__item medium--one-third small--one-third'> <a href='/' class='header-logo'> <img class='editable-logo' src='{{logo}}' alt=''> </a> </div> <div class='grid__item medium--two-thirds small--two-thirds text-right'> <div class='mobile-nav'> <a href='javascript:void(0)' class='header-bars'> <i class='fa fa-bars' aria-hidden='true'></i> </a> <ul class='no-bullets'> <li ng-repeat='li in rsHeader'> <a class='smooth-scroll editable-{{li.name}}' href='{{li.href}}'>{{li.value}}</a> </li> </ul> </div> </div> </div> </div> </div></header>",
         "id": "000001",
         "image_demo": "http://file.hstatic.net/1000234244/file/header-2_93bf1a5a6aea4c84a166173e710b0628.png",
         "type": "header",
