@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Facebook Get Comment Stream</title>
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&subset=vietnamese" rel="stylesheet"/>
+        <style type="text/css" media="screen">
+        html, body {
+			font-family: 'Comfortaa', cursive;
+		}
+
+        .container {
+        	max-width: 450px;
+        }
+
+        .text-on-pannel {
+        	background: #fff none repeat scroll 0 0;
+        	height: auto;
+        	margin-left: 20px;
+        	padding: 3px 5px;
+        	position: absolute;
+        	margin-top: -47px;
+        	border: 1px solid #337ab7;
+        	border-radius: 8px;
+        }
+
+        .panel {
+        	height: 350px;
+        	margin-top: 27px !important;
+        	overflow: auto;
+        }
+
+        .panel::-webkit-scrollbar {
+		    width: 0;
+		}
+
+        .panel-body {
+        	padding-top: 30px !important;
+        }
+
+        .media-heading {
+        	font-weight: bold;
+        	border-bottom: 1px solid;
+    		padding-bottom: 5px;
+        }
+
+        .media-object {
+        	border-radius: 50%;
+        }
+
+        .media-body p {
+    	    max-height: 40px;
+    		overflow: hidden;
+        }
+    </style>
+    </head>
+    <body>
+    	<div class="container">
+    		<div class="panel panel-primary">
+    			<div class="panel-body">
+    				<h3 class="text-on-pannel text-primary"><strong class="text-uppercase">Comment</strong></h3>
+    				<div id="results">
+    					
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript">
+		</script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			var url_string = window.location.href;
+			var url = new URL(url_string);
+			var id = url.searchParams.get("id");;
+			var token = url.searchParams.get("access_token");
+			var arr_cmt = {};
+			$(document).ready(function () {
+				if (id != null || id != undefined && token != null || token != undefined) {
+					function generateBlockComment(id, name, mess) {
+						var output = "";
+							output += '<div class="media">';
+							  	output += '<div class="media-left">';
+							    	output += '<a href="#">';
+							      		output += '<img class="media-object" src="https://graph.facebook.com/' + id + '/picture?type=large&width=50&height=50"/>';
+							    	output += '</a>';
+							  	output += '</div>';
+							  	output += '<div class="media-body">';
+							    	output += '<h4 class="media-heading">' + name + '</h4>';
+							    	output += '<p>' + mess + '</p>';
+							  	output += '</div>';
+							output += '</div>';
+						return output;
+					}
+					setInterval(function(){
+						$.get( "https://graph.facebook.com/" + id + "?fields=comments.order(reverse_chronological).limit(1)&access_token=" + token, function(data) {
+							var arr = data.comments.data;
+							let id_user = arr[0].from.id;
+							let name_user = arr[0].from.name;
+							let mess = arr[0].message;
+							let id_cmt = arr[0].id;
+							if (!arr_cmt.hasOwnProperty(id_cmt)) {
+								$('#results').append(generateBlockComment(id_user, name_user, mess));
+								arr_cmt[id_cmt] = true;
+							}
+						});
+						$('.panel').animate({scrollTop: $('.panel').get(0).scrollHeight}, 0);
+					}, 3000);
+				} else {
+					alert('Vui lòng kiểm tra lại id post và token!');
+				}
+			});
+		</script>
+    </body>
+</html>
